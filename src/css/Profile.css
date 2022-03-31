@@ -1,0 +1,208 @@
+/* header .header-img span {
+	position: absolute;
+	left: 2em;
+	color: white;
+	top: 50%;
+	transform: translateY(-50%);
+} */
+main.profile-main {
+	width: 85%;
+	display: flex;
+    flex-direction: row;
+}
+main.profile-main .display-picture {
+	margin-right: 1em;
+}
+main.profile-main .display-picture img {
+	box-shadow: 0px 3px 6px #00000029;
+	height: 9em;
+	width: 9em;
+}
+main.profile-main .details {
+	width: 100%;
+	font-size: 0.8em;
+	box-shadow: 0px 3px 6px #00000029;
+	padding: 0.5em 0.5em;
+	margin-bottom: 1em;
+    display:block;
+}
+main.profile-main .details .name {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 2em;
+	width: 80%;
+}
+main.profile-main .details .name div p {
+	font-weight: 500;
+}
+main.profile-main .details .name div input {
+	outline: none;
+	border: none;
+	padding: 0.6em 0.5em;
+	background-color: #ececec;
+}
+main.profile-main .details .name div input::placeholder {
+	font-size: 0.9em;
+	color: #868686;
+}
+main.profile-main .details .about, main.profile-main .details .interest, main.profile-main .details .desig, main.profile-main .details .save {
+	margin: 2em;
+}
+main.profile-main .details .about p, main.profile-main .details .interest p, main.profile-main .details .desig p, main.profile-main .details .save p {
+	font-weight: 500;
+}
+main.profile-main .details .about textarea {
+	width: 40em;
+	height: 11em;
+	resize: vertical;
+	outline: none;
+	border: none;
+	padding: 0.6em 0.7em;
+	background-color: #ececec;
+}
+main.profile-main .details .save {
+	display: flex;
+	justify-content: flex-end;
+}
+main.profile-main .details .save input[type=submit] {
+	outline: none;
+	border: none;
+	padding: 0.6em 1.9em;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #FF6738;
+}
+main.profile-main .details .save input[type=submit]:disabled {
+	background-color: gray;
+}
+main.profile-main .details .professional {
+	margin: 1em;
+	padding: 0 1em;
+	border: 1px solid lightgray;
+	transition: all 0.2s ease-in;
+}
+main.profile-main .details .professional p {
+	font-weight: 500;
+}
+main.profile-main .details .professional > div {
+	margin: 2.3em 0;
+}
+main.profile-main .details .professional > div div {
+	display: flex;
+}
+main.profile-main .details .professional > div div label {
+	padding-left: 3.1em;
+	margin: 0 1em;
+}
+main.profile-main .details .professional > div div label:first-child {
+	margin-left: 0;
+}
+main.profile-main .details .professional > div input {
+	outline: none;
+	border: none;
+	padding: 0.6em 0.5em;
+	width: 30%;
+	background-color: #ececec;
+}
+main.profile-main .details .professional > div:first-child {
+	margin-top: 1.5em;
+}
+main.profile-main .details .professional > div:last-child {
+	margin-bottom: 1.5em;
+}
+main.profile-main .details .professional .role span {
+	font-size: 0.8em;
+	color: red;
+}
+label.checkbox-container {
+	cursor: pointer;
+	margin: 1.2em 0;
+	position: relative;
+	height: 2em;
+	padding-left: 2.6em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+label.checkbox-container input {
+	position: absolute;
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+label.checkbox-container input:checked ~ span {
+	background-color: #FF6738;
+}
+label.checkbox-container input:checked ~ span:after {
+	display: block;
+}
+label.checkbox-container span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2em;
+	width: 2em;
+	background-color: #e6e6e6;
+	border-radius: 0.5em;
+	transition: background-color 0.2s ease-in-out;
+}
+label.checkbox-container span:after {
+	content: '';
+	transition: display 0.2s ease-in-out;
+	position: absolute;
+	display: none;
+	border: solid #ffffff;
+	border-width: 0 3px 3px 0;
+	height: 0.8em;
+	width: 0.4em;
+	top: 45%;
+	left: 30%;
+	transform: rotate(45deg) translate(-50%, -50%);
+}
+label.radio-container {
+	cursor: pointer;
+	margin: 1.2em 0;
+	position: relative;
+	height: 2em;
+	padding-left: 2.6em;
+	display: flex;
+	align-items: center;
+}
+label.radio-container input {
+	position: absolute;
+	height: 0;
+	width: 0;
+	opacity: 0;
+}
+label.radio-container input:checked ~ span {
+	border: 3px solid #FF6738;
+}
+label.radio-container input:checked ~ span:after {
+	display: block;
+}
+label.radio-container span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2em;
+	width: 2em;
+	background-color: transparent;
+	border: 3px solid #b3b3b3;
+	border-radius: 50%;
+}
+label.radio-container span:after {
+	content: '';
+	position: absolute;
+	display: none;
+	height: 1.2em;
+	width: 1.2em;
+	background-color: #FF6738;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.red-border {
+	border: 1px solid red !important;
+}

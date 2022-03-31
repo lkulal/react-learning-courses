@@ -1,0 +1,134 @@
+.course {
+	width: 98%;
+	box-shadow: 0px 3px 6px #00000029;
+	border: 1px solid #F4F4F4;
+	border-radius: 0px 0px 4px 4px;
+	display: flex;
+	margin: 0.5em 0;
+}
+.course .info {
+	flex: 2.7;
+	display: flex;
+	flex-direction: column;
+	transform: translateY(-0.2em);
+}
+.course .info .name {
+	font-weight: bold;
+	margin: 0 0 0.8em 0;
+}
+.course .info .tag {
+	display: inline;
+	padding: 0.4em 2.1em;
+	border-radius: 0.4em;
+	background-color: #E25B32;
+	color: #ffffff;
+	margin: 0 0.6em;
+	font-size: 0.75em;
+}
+.course .info .tag:first-child {
+	margin: 0 0.6em 0 0;
+}
+.course .info .author {
+	margin: 0 0.4em 0 0;
+	font-size: 0.85em;
+}
+.course .info-cart {
+	flex: 2.5;
+}
+.course .move {
+	flex: 1;
+	color: #1873CE;
+	font-weight: 500;
+	text-align: right;
+	cursor: pointer;
+}
+.course .cart {
+	text-align: center;
+}
+.course .add-cart {
+	background-color: #FF6738;
+	min-width: 80%;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 0.3em;
+	padding: 0.5em 0;
+}
+.course .fav {
+	cursor: pointer;
+}
+.course .prices {
+	display: flex;
+	align-items: center;
+}
+.course .prices .price {
+	font-weight: bold;
+	padding: 0 1em;
+}
+.course .prices .orig-price {
+	font-size: 0.8em;
+	color: #868686;
+}
+.course .price-cart {
+	flex: 0.7;
+	font-weight: bold;
+	text-align: center;
+}
+.course .rec-courses {
+	border: 1px solid #E0E0E0;
+	margin-bottom: 0.6em;
+}
+.course .rec-courses .heading {
+	padding-left: 1em;
+	font-weight: 500;
+}
+.course .rec-courses .course {
+	margin: 0.5em 0.7em;
+}
+.course .rec-courses .course .price {
+	margin: 0 0.4em;
+	font-weight: bold;
+}
+.course .rec-courses .course .orig-price {
+	font-size: 0.75em;
+	color: #666666;
+}
+@media only screen and (min-width: 1200px) {
+	.course {
+		align-items: center;
+		font-size: 0.8em;
+		flex-direction: row;
+	}
+	.course .more {
+		display: block;
+		cursor: pointer;
+		flex: 0.25;
+	}
+	.course .course-image {
+		width: 4rem;
+		height: 4rem;
+		margin: 0.5rem;
+	}
+	.course .cart {
+		flex: 1.5;
+	}
+	.course > .author {
+		flex: 1.3;
+		position: relative;
+		left: 0.5em;
+	}
+	.course .delete {
+		margin: auto 1rem;
+	}
+	.course .delete img {
+		cursor: pointer;
+		height: 1.2rem;
+	}
+}
+.orig-empty {
+	margin: 0 1.65em;
+	text-align: center;
+}

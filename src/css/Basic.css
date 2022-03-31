@@ -1,0 +1,128 @@
+
+main{
+    position:relative;
+    width:85%;
+    height:100%;
+    margin:auto;
+    margin-top:0.5em;
+    display:flex;
+}
+main.all-courses-main{
+	flex-direction: row;
+}
+.course-list {
+	width: 75%;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.course-list .course-list-component {
+	height: 100%;
+}
+.course-list .height {
+	height:fit-content;
+}
+@media only screen and (min-width: 1200px) {
+	.course-list {
+		height: 71.5vh !important;
+	}
+}
+.course-list .secondary-heading {
+	display: flex;
+	padding: 0 0.8rem;
+	justify-content: space-between;
+}
+.course-list .secondary-heading p {
+	font-weight: bold;
+}
+.course-list .secondary-heading select {
+	padding: 0 0.4em;
+	margin-right: 0.3em;
+	height: 2.5em;
+	outline: none;
+	transform: translateY(0.8em);
+}
+.course-list .page-no {
+	display: flex;
+	margin: 1em 0 1em;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.course-list .page-no > p {
+	margin: auto 0;
+	padding: 0 0.5em;
+	cursor: pointer;
+}
+.course-list .page-no > p:first-child, .course-list .page-no > p:last-child {
+	color: #FF6738;
+}
+.course-list .page-no label.page-radio {
+	position: relative;
+	cursor: pointer;
+	margin: 0 0.5em;
+	font-size: 0.6em;
+}
+.course-list .page-no label.page-radio input[type=radio] {
+	height: 0;
+	width: 0;
+	position: absolute;
+}
+.course-list .page-no label.page-radio input[type=radio]:checked ~ p {
+	color: #ffffff;
+	background-color: #FF6738;
+}
+.course-list .page-no label.page-radio p {
+	margin: 0 0.5em;
+	color: #FF6738;
+	background-color: #ffffff;
+	cursor: pointer;
+	border-radius: 50%;
+	width: 2.2em;
+	height: 2.2em;
+}
+.course-list .page-no label.page-radio p span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.course-cart {
+	position: relative;
+	right: 0;
+	overflow-y: hidden;
+	width: 25%;
+}
+.course-cart .search-bar {
+	display: flex;
+	justify-content: center;
+	margin: 0.3rem 0;
+	transform: translateY(0.4em);
+}
+.course-cart .search-bar input {
+	width: 100%;
+	padding: 0 0.5em;
+	outline: none;
+	border: none;
+	background-color: #ececec;
+}
+.course-cart .search-bar img {
+	cursor: pointer;
+	height: 2.2em;
+	background-color: #FF6738;
+}
+.course-cart app-side-cart {
+	box-shadow: 0px 3px 6px #00000029;
+	margin: 1em 0 3.5em;
+}
+
+
+.not-found{
+    height:5em;
+    width:95%;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

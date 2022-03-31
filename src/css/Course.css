@@ -1,0 +1,113 @@
+main {
+	display: flex;
+	flex-direction: column;
+}
+.secondary-heading p strong {
+	cursor: pointer;
+}
+.fullscreen-banner {
+	position: relative;
+	width: 100vw;
+	margin-left: -7.5vw;
+	padding: 1.6em 7.5vw;
+	color: #ffffff;
+	background-color: #000000;
+}
+.fullscreen-banner p, .fullscreen-banner div {
+	width: 50%;
+}
+.fullscreen-banner .name {
+	font-weight: 600;
+	font-size: 1.1em;
+}
+.fullscreen-banner .desc {
+	font-size: 0.85em;
+	margin-bottom: 2em;
+}
+.fullscreen-banner .author {
+	font-size: 0.85em;
+	color: #FF6738;
+}
+.fullscreen-banner .tags {
+	margin: 1em 0;
+}
+.fullscreen-banner .tags .tag {
+	display: inline;
+	padding: 0.3em 2em;
+	border-radius: 0.4em;
+	background-color: #ffffff;
+	color: #E25B32;
+	margin: 0 0.6em;
+	font-size: 0.7em;
+}
+.fullscreen-banner .tags .tag:first-child {
+	margin: 0 0.6em 0 0;
+}
+.details {
+	display: flex;
+}
+.details section {
+	width: 50%;
+}
+.details .left-content {
+	margin: 0.5em 0;
+	padding: 0 0.8em;
+	height: 100%;
+	border: 1px solid #ebebeb;
+}
+.details .left-content p:first-child {
+	font-weight: bold;
+}
+.details .video {
+	z-index: 1010;
+	transform: translateY(-25vh);
+}
+.details .video iframe {
+	width: 80%;
+	height: 70%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.details .video > div {
+	border: 1px solid #E0E0E0;
+	padding: 0 0.7em 0.8em;
+	width: 80%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.details .video > div .price {
+	font-weight: bold;
+}
+.details .video > div .orig-price {
+	font-size: 0.8em;
+	color: #868686;
+	margin: 0;
+}
+.details .video > div .time-left {
+	font-size: 0.8em;
+	color: red;
+}
+.details .video > div div {
+	display: flex;
+	justify-content: space-between;
+}
+.details .video > div div input[type=button] {
+	cursor: pointer;
+	font-weight: 500;
+	width: 47%;
+	padding: 0.45em 0;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+}
+.details .video > div div input[type=button].add-cart {
+	background-color: #FF6738;
+	color: #ffffff;
+}
+.details .video > div div input[type=button].add-wish {
+	background-color: #ffffff;
+	color: #FF6738;
+	border: 1px solid #FF6738;
+}

@@ -1,0 +1,65 @@
+.dark-overlay {
+	position: fixed;
+	overflow-x: none;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: #000000ad;
+	z-index: 1090290;
+}
+.dark-overlay .modal {
+	opacity: 2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 200px;
+	min-width: 400px;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.dark-overlay .modal .top-bar {
+	display: flex;
+	padding: 0.5em 1em;
+	background-color: #d9d9d9;
+	justify-content: flex-end;
+}
+.dark-overlay .modal .top-bar p {
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0;
+}
+.dark-overlay .modal .content p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dark-overlay .modal .content p img {
+	height: 1em;
+	width: 1em;
+	margin-right: 0.5em;
+}
+.dark-overlay .modal .content p:nth-child(2) {
+	font-size: 0.8em;
+}
+.dark-overlay .modal .confirm {
+	margin: 1em 0 1.5em;
+	display: flex;
+	justify-content: center;
+}
+.dark-overlay .modal .confirm input[type=button] {
+	margin: auto;
+	background-color: #FF6738;
+	min-width: 25%;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 0.3em;
+	padding: 0.5em 0;
+}
