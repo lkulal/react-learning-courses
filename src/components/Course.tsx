@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useLocation, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { AppState } from "../store";
 import { Course as CourseType } from "../utilities/allModels";
 import "../css/Course.css";
@@ -54,12 +54,15 @@ const Course = (props:Props) => {
 
             <div className="secondary-heading">
                 {
-                    source=='courses'?<p>
-                        <strong>All Courses</strong> &gt; {course?.title}
-                    </p>:source=='wishlist'?
+                    source=='courses'?
                     <p>
-                        <strong>My Wishlist</strong> &gt; {course?.title}
-                    </p>:''
+                        <Link to='/courses'><strong>All Courses</strong></Link> &gt; {course?.title}
+                    </p>
+                    :source=='wishlist'?
+                    <p>
+                        <Link to="/wishlist"><strong>My Wishlist</strong></Link> &gt; {course?.title}
+                    </p>
+                    :''
                 }
             </div>
 

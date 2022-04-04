@@ -111,3 +111,9 @@ main {
 	color: #FF6738;
 	border: 1px solid #FF6738;
 }
+
+
+a{
+	text-decoration: none !important;
+	color:inherit;
+}

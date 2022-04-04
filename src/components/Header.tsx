@@ -45,7 +45,7 @@ const Header = () =>{
                     location.pathname=='/courses'?<span>Discover Latest Courses on<br/>React</span>:
                     location.pathname=='/wishlist'?<span>Wishlist</span>:
                     location.pathname=='/cart'?<span>Shopping Cart</span>:
-                    location.pathname=='/profile'?<span>My Profile</span>:''
+                    location.pathname=='/profile'?<span>My Profile</span>:<span>Course Details</span>
                 }
             </div>
 

@@ -20,10 +20,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Navigate to='courses'/>}/>
           <Route path='/courses' element={<AllCourse/>}/>
-          <Route path='/:source/:id' element={<Course source=''/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/wishlist' element={<Wishlist/>}/>
-          <Route path='profile' element={<Profile/>}/>
+          <Route path='/:source/course/:id' element={<Course source=''/>}/>
+          <Route path='/profile' element={<Profile/>}/>
         </Routes>
         <Notification/>
       </Provider>

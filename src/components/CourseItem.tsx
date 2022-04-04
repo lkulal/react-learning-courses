@@ -72,7 +72,7 @@ const CourseItem = (props:Props) =>{
     }
 
     const goToCourse = () =>{
-        navigate(`${source=='cart/wish'?"wishlist":source}/${course.id}`);
+        navigate(`/${source=='cart/wish'?"wishlist":source}/course/${course.id}`);
     }
 
     if(source=="wishlist" || source=="courses"){
